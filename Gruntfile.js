@@ -72,16 +72,16 @@ module.exports = function( grunt ){
   },
 
   babel: {
-    options: {
-        sourceMap: true,
-        presets: ['es2015']
-    },
-    dist: {
-        files: {
-            'src/js/': 'src/jsx/*.js'
+        options: {
+            sourceMap: true,
+            presets: ['es2015']
+        },
+        dist: {
+            files: {
+                'js/TodoComp.js': 'js/jsx/TodoComp.js'
+            }
         }
-    }
-  },
+    },
 
 	copy: {
 	  prod: {
