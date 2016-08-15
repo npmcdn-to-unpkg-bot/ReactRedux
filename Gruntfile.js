@@ -1,6 +1,6 @@
 
 module.exports = function( grunt ){
-
+require('load-grunt-tasks')(grunt); 
   grunt.initConfig({
     jshint: {
       options: {
@@ -73,8 +73,7 @@ module.exports = function( grunt ){
 
   babel: {
         options: {
-            sourceMap: true,
-            presets: ['es2015']
+            sourceMap: true
         },
         dist: {
             files: {
